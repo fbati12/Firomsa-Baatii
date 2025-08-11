@@ -1,0 +1,245 @@
+/* Your original body and other styles unchanged */
+body {
+    font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, Elephant, Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px 40px 20px;
+
+    /* Add these two lines below: */
+    background: url("office image.jpg") no-repeat center center fixed;
+    background-size: cover;
+
+    color: #43474d;
+
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    background-color: #e9edf5;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(29, 0, 0, 0.2);
+}
+
+header img {
+    border-radius: 600%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 3px solid #6b86ad;
+    box-shadow: 0 4px 10px rgba(107, 134, 173, 0.4);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #5f5aa0;
+    font-family: elephant;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-weight: 600;
+    color: #a4b3d1;
+}
+
+/* Sections */
+section {
+    margin-top: 40px;
+    padding: 25px 20px;
+    background-color: #2e3e54;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #758eb9;
+    border-bottom: 3px solid #212326;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* About Me Section - UPDATED ONLY THIS */
+#about p {
+    font-family: 'new roman', serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: rgb(240, 161, 14);
+    text-shadow: 0 0 5px rgb(52, 145, 211), 0 0 10px rgb(15, 31, 138);
+    background-image: repeating-radial-gradient(circle at center, transparent 0 1px, rgb(55, 17, 244)
+    rgb(14, 239, 153) 2px 3px);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Services Section (unchanged) */
+ul.services {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+ul.services li {
+    background: #4a5c78;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button.service-btn {
+    background-color: #6b86ad;
+    color: #1f2838;
+    border: none;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 1.15rem;
+    border-radius: 10px;
+    width: 100%;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button.service-btn:hover {
+    background-color: #191a1b;
+    color: #893d3d;
+}
+
+/* Booking Section */
+form#booking-form {
+    display: none; /* Initially hidden */
+    background: #3a4968;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#selected-service {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 18px;
+    color: #e0eafb;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #a4b3d1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.8px solid #6b86ad;
+    background-color: #2b3a54;
+    color: #f0f0f0;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="country"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #e0eafb;
+    outline: none;
+    box-shadow: 20040 8px rgba(224, 234, 251, 0.3);
+}
+
+.btn-submit {
+    background-color: #7a7d81;
+    border: none;
+    color: #1f2838;
+    padding: 14px 0;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #8c9cb6;
+}
+
+/* Confirmation Message */
+#confirmation {
+    margin-top: 20px;
+    color: #4CAF50;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-align: center;
+    #office-confirmation {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+    }
+
+}
+
+/* Contact Icons */
+.contact-icons a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 80px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icons a img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header img {
+        width: 90px;
+        height: 90px;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    ul.services {
+        grid-template-columns: 1fr;
+    }
+}
+i wanna change background of about me to miirror where too be seen the my office back ground picture

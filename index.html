@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Portfolio & Booking</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    #office-confirmation {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #d4edda;
+      border: 1px solid #c3e6cb;
+      color: #155724;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+
+<header>
+  <img src="profile.jpg" alt="My Profile Picture">
+  <div>
+    <h1>Firomsa Bati Adunsa</h1>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+   Hey, I'm Firomsa! I'm a Software Engineer and Developer. I really enjoy building websites and apps that are not just reliable but also a breeze to use. I'm pretty hands on with both the front end, using stuff like HTML and JavaScript, and the back end, where I use Python to make everything work smoothly.
+
+Beyond just coding, I also help businesses grow with Shopify and online ads. So, my goal isn't just to make things look good, but to create digital tools that actually get results. It's a pretty fun gig! 💻
+  </p>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <ul class="services">
+    <li><button class="service-btn" data-service="Custom Website Design">Custom Website Design</button></li>
+    <li><button class="service-btn" data-service="Portfolio Website">Portfolio Website</button></li>
+    <li><button class="service-btn" data-service="Shopify Store Setup">Shopify Store Setup</button></li>
+    <li><button class="service-btn" data-service="Meta & Google Ads">Meta & Google Ads</button></li>
+    <li><button class="service-btn" data-service="Other">Other</button></li>
+  </ul>
+</section>
+
+<section id="booking-section">
+  <h2>Book a Service</h2>
+  <form id="booking-form">
+    <p id="selected-service">Service: None Selected</p>
+
+    <label for="fullname">Full Name *</label>
+    <input type="text" id="fullname" name="fullname" required placeholder="Your full name" />
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+
+    <label for="phone">Phone Number *</label>
+    <input type="tel" id="phone" name="phone" required placeholder="+1 555 123 4567" />
+
+    <label for="country">Country *</label>
+    <input type="text" id="country" name="country" required placeholder="Your country" />
+
+    <label for="date">Preferred Date *</label>
+    <input type="date" id="date" name="date" required min="" />
+
+    <button type="submit" class="btn-submit">Book Now</button>
+  </form>
+
+  <div id="confirmation"></div>
+</section>
+
+<section id="schedule-office-visit">
+  <h2>Schedule Office Visit</h2>
+  <form id="office-booking-form">
+    <label for="office-fullname">Full Name *</label>
+    <input type="text" id="office-fullname" name="office-fullname" required placeholder="Your full name" />
+
+    <label for="office-email">Email *</label>
+    <input type="email" id="office-email" name="office-email" required placeholder="you@example.com" />
+
+    <label for="office-phone">Phone Number *</label>
+    <input type="tel" id="office-phone" name="office-phone" required placeholder="+1 555 123 4567" />
+
+    <label for="office-date">Preferred Date *</label>
+    <input type="date" id="office-date" name="office-date" required min="" />
+
+    <label for="office-hours">Hours Needed *</label>
+    <input type="number" id="office-hours" name="office-hours" min="1" max="12" required placeholder="Hours" />
+
+    <button type="submit" class="btn-submit">Book Office Now</button>
+  </form>
+
+  <div id="office-confirmation"></div>
+</section>
+
+<section id="contact">
+  <h2>Contact Me</h2>
+  <div class="contact-icons">
+    <a href="https://yourwebsite.com" title="Website" target="_blank" rel="noopener noreferrer">
+      <img src="website image.jpg" alt="Website" />
+    </a>
+    <a href="mailto:fbusair@gmail.com" title="Email" target="_blank" rel="noopener noreferrer">
+      <img src="email image.jpg" alt="Email" />
+    </a>
+    <a href="https://wa.me/467626032565" title="WhatsApp" target="_blank" rel="noopener noreferrer">
+      <img src="whatsapp image.jpg" alt="WhatsApp" />
+    </a>
+    <a href="https://www.facebook.com/fromsa.busair.3" title="Facebook" target="_blank" rel="noopener noreferrer">
+      <img src="fb image.jpg" alt="Facebook" />
+    </a>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
